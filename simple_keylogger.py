@@ -1,6 +1,6 @@
 from pynput import keyboard
 
-# log file name [location: in the same folder]
+# log file name: keylog.txt , location: in the same folder
 log_file = 'keylog.txt'
 
 def on_press(key):
@@ -25,7 +25,7 @@ def main():
     print("""This program will record and log your keystrokes.
 Do you agree to proceed?
 """)
-    consent = input("If Yes press Y, If No press N")
+    consent = input("If Yes press Y, If No press N ")
     
     if consent == 'Y':
         print("Keylogging started. Press ESC to stop.")
